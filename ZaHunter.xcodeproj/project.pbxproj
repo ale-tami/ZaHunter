@@ -23,6 +23,7 @@
 		4DA8E4771992B6FE00233780 /* ZaHunterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8E4761992B6FE00233780 /* ZaHunterTests.m */; };
 		4DA8E4811992B70F00233780 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA8E4801992B70F00233780 /* CoreLocation.framework */; };
 		4DA8E4841992C6AE00233780 /* Pizzeria.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8E4831992C6AE00233780 /* Pizzeria.m */; };
+		4DA8E4871992D5B000233780 /* NearestPizzasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8E4861992D5B000233780 /* NearestPizzasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		4DA8E4801992B70F00233780 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4DA8E4821992C6AE00233780 /* Pizzeria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizzeria.h; sourceTree = "<group>"; };
 		4DA8E4831992C6AE00233780 /* Pizzeria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizzeria.m; sourceTree = "<group>"; };
+		4DA8E4851992D5B000233780 /* NearestPizzasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearestPizzasViewController.h; sourceTree = "<group>"; };
+		4DA8E4861992D5B000233780 /* NearestPizzasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearestPizzasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				4DA8E4611992B6FE00233780 /* ViewController.m */,
 				4DA8E4821992C6AE00233780 /* Pizzeria.h */,
 				4DA8E4831992C6AE00233780 /* Pizzeria.m */,
+				4DA8E4851992D5B000233780 /* NearestPizzasViewController.h */,
+				4DA8E4861992D5B000233780 /* NearestPizzasViewController.m */,
 				4DA8E4631992B6FE00233780 /* Images.xcassets */,
 				4DA8E4521992B6FE00233780 /* Supporting Files */,
 			);
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA8E4871992D5B000233780 /* NearestPizzasViewController.m in Sources */,
 				4DA8E4621992B6FE00233780 /* ViewController.m in Sources */,
 				4DA8E45C1992B6FE00233780 /* AppDelegate.m in Sources */,
 				4DA8E4581992B6FE00233780 /* main.m in Sources */,

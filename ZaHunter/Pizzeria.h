@@ -12,7 +12,7 @@
 @interface Pizzeria : MKMapItem
 
 @property MKRoute *routeToPizza;
-@property int distance;
+@property float distance;
 
 
 @end

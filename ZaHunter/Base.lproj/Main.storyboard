@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Item-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -54,14 +54,46 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6mG-Lk-4mk"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="6mG-Lk-4mk"/>
                     <connections>
                         <outlet property="tableView" destination="7Au-vx-lu9" id="0c5-cy-XIa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="110"/>
+            <point key="canvasLocation" x="655" y="-390"/>
+        </scene>
+        <!--Nearest Pizzas View Controller-->
+        <scene sceneID="5uZ-E2-DBd">
+            <objects>
+                <viewController id="7IC-0r-LSU" customClass="NearestPizzasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ohi-2Q-mCe"/>
+                        <viewControllerLayoutGuide type="bottom" id="GfF-y9-oue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xem-uP-hiG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z7g-BJ-Hfn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7IC-0r-LSU" id="W0x-jm-Rgb"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="vHC-Go-Ina"/>
+                    <navigationItem key="navigationItem" id="xYf-6S-mMN"/>
+                    <connections>
+                        <outlet property="map" destination="z7g-BJ-Hfn" id="8o9-ih-kH7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7n-gf-1rG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="335"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DMn-ji-MhJ">
@@ -75,6 +107,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="GYV-yf-Orz"/>
+                        <segue destination="7IC-0r-LSU" kind="relationship" relationship="viewControllers" id="dMP-nW-nhg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tO-K8-Ecr" userLabel="First Responder" sceneMemberID="firstResponder"/>
